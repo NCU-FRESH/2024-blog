@@ -17,30 +17,32 @@ jobs:
             const creator = context.payload.issue.user.login;
             const org = context.repo.owner;
             try {
-              const { data: membership } = await github.rest.orgs.checkMembershipForUser({
+              await github.rest.orgs.checkMembershipForUser({
                 org: org,
                 username: creator
               });
-              console.log(`${creator} is a member of ${org}`);
-              return true;
+              console.log(`${creator} is a public member of ${org}`);
+              core.setOutput('result', 'true');
             } catch (error) {
               if (error.status === 404) {
                 try {
-                  const { data: privateMembership } = await github.rest.orgs.checkMembershipForUser({
+                  await github.rest.orgs.getMembershipForUser({
                     org: org,
                     username: creator
                   });
                   console.log(`${creator} is a private member of ${org}`);
-                  return 'true';
+                  core.setOutput('result', 'true');
                 } catch (innerError) {
                   if (innerError.status === 404) {
                     console.log(`${creator} is not a member of ${org}`);
-                    console.log(innerError);
-                    return 'false';
+                    core.setOutput('result', 'false');
+                  } else {
+                    throw innerError;
                   }
-                  throw innerError;
                 }
-              throw error;
+              } else {
+                throw error;
+              }
             }
 
       - name: Close issue if not a team member
@@ -49,15 +51,28 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            github.rest.issues.createComment({
+            await github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
               body: 'Sorry, only team members can create issues in this repository. This issue will be closed.'
-            })
-            github.rest.issues.update({
+            });
+            await github.rest.issues.update({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
               state: 'closed'
-            })
+            });
+
+      - name: Welcome organization member
+        if: steps.check_membership.outputs.result == 'true'
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'Thank you for creating this issue. Our team will review it shortly.'
+            });
