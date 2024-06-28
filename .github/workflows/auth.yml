@@ -8,21 +8,21 @@ jobs:
   manage_issue:
     runs-on: ubuntu-latest
     steps:
-      - name: Check if issue creator is an organization member
+      - name: Check if issue creator is a team member
         id: check_membership
         uses: actions/github-script@v6
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             const creator = context.payload.issue.user.login;
-            const org = 'NCU-FRESH'; // Replace with your organization name as a string
+            const org = context.repo.owner;
             try {
-              const { data: publicMembership } = await github.rest.orgs.checkMembershipForUser({
+              const { data: membership } = await github.rest.orgs.checkMembershipForUser({
                 org: org,
                 username: creator
               });
-              console.log(`${creator} is a public member of ${org}`);
-              return 'true';
+              console.log(`${creator} is a member of ${org}`);
+              return true;
             } catch (error) {
               if (error.status === 404) {
                 try {
@@ -40,36 +40,24 @@ jobs:
                   }
                   throw innerError;
                 }
-              }
               throw error;
             }
-      - name: Close issue if not an organization member
+
+      - name: Close issue if not a team member
         if: steps.check_membership.outputs.result == 'false'
         uses: actions/github-script@v6
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            await github.rest.issues.createComment({
+            github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: 'Sorry, only organization members can create issues in this repository. This issue will be closed.'
-            });
-            await github.rest.issues.update({
+              body: 'Sorry, only team members can create issues in this repository. This issue will be closed.'
+            })
+            github.rest.issues.update({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
               state: 'closed'
-            });
-      - name: Welcome organization member
-        if: steps.check_membership.outputs.result == 'true'
-        uses: actions/github-script@v6
-        with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
-          script: |
-            await github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: 'Thank you for creating this issue. Our team will review it shortly.'
-            });
+            })
