@@ -26,6 +26,7 @@ jobs:
             } catch (error) {
               if (error.status === 404) {
                 console.log(`${creator} is not a member of ${org}`);
+                console.log(error);
                 return 'false';
               }
               throw error;
