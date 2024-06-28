@@ -1,0 +1,51 @@
+name: Manage Issues
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  manage_issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if issue creator is a team member
+        id: check_membership
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const creator = context.payload.issue.user.login;
+            const org = context.repo.owner;
+            try {
+              const { data: membership } = await github.rest.orgs.checkMembershipForUser({
+                org: org,
+                username: creator
+              });
+              console.log(`${creator} is a member of ${org}`);
+              return true;
+            } catch (error) {
+              if (error.status === 404) {
+                console.log(`${creator} is not a member of ${org}`);
+                return false;
+              }
+              throw error;
+            }
+
+      - name: Close issue if not a team member
+        if: steps.check_membership.outputs.result == 'false'
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'Sorry, only team members can create issues in this repository. This issue will be closed.'
+            })
+            github.rest.issues.update({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'closed'
+            })
