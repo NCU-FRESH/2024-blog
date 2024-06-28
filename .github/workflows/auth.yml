@@ -17,21 +17,32 @@ jobs:
             const creator = context.payload.issue.user.login;
             const org = 'NCU-FRESH'; // Replace with your organization name as a string
             try {
-              const { data: membership } = await github.rest.orgs.checkMembershipForUser({
+              const { data: publicMembership } = await github.rest.orgs.checkMembershipForUser({
                 org: org,
                 username: creator
               });
-              console.log(`${creator} is a member of ${org}`);
+              console.log(`${creator} is a public member of ${org}`);
               return 'true';
             } catch (error) {
               if (error.status === 404) {
-                console.log(`${creator} is not a member of ${org}`);
-                console.log(error);
-                return 'false';
+                try {
+                  const { data: privateMembership } = await github.rest.orgs.checkMembershipForUser({
+                    org: org,
+                    username: creator
+                  });
+                  console.log(`${creator} is a private member of ${org}`);
+                  return 'true';
+                } catch (innerError) {
+                  if (innerError.status === 404) {
+                    console.log(`${creator} is not a member of ${org}`);
+                    console.log(innerError);
+                    return 'false';
+                  }
+                  throw innerError;
+                }
               }
               throw error;
             }
-
       - name: Close issue if not an organization member
         if: steps.check_membership.outputs.result == 'false'
         uses: actions/github-script@v6
@@ -50,7 +61,6 @@ jobs:
               repo: context.repo.repo,
               state: 'closed'
             });
-
       - name: Welcome organization member
         if: steps.check_membership.outputs.result == 'true'
         uses: actions/github-script@v6
