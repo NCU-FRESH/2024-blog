@@ -7,10 +7,12 @@
 注意：請確定有「建立」一個新的資料夾
 ![螢幕擷取畫面 2024-07-01 154844](https://github.com/NCU-FRESH/2024-blog/assets/93990047/81d27ab5-0ad2-4590-bc14-db83d8c38e3f)
 3. 在輸入一次貼文標題，後面加上.txt，這一步會建立一個txt檔在資料夾底下，(沒甚麼用，但方便管理)
+注意：請確定有「建立」一個新的資料夾
 ![螢幕擷取畫面 2024-07-01 154941](https://github.com/NCU-FRESH/2024-blog/assets/93990047/3a450c2e-6597-4ec1-93d6-865ca1927b18)
 4. 直接按下commit changes
 ![螢幕擷取畫面 2024-07-01 155003](https://github.com/NCU-FRESH/2024-blog/assets/93990047/301d1d5c-1ac1-4df3-9d3d-8bc84f145ea9)
 5. 完成後應該可以看到這個畫面
+注意：請確定有「建立」一個新的資料夾
 ![螢幕擷取畫面 2024-07-01 155025](https://github.com/NCU-FRESH/2024-blog/assets/93990047/5170fcd6-c479-4ef7-906d-cdfad6f4be0c)
 6. 點擊Add file / upload files
 ![螢幕擷取畫面 2024-07-01 155044](https://github.com/NCU-FRESH/2024-blog/assets/93990047/52dde26a-b2f7-4ab9-a7d4-f72494da22df)
