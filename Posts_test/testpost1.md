@@ -1,6 +1,6 @@
 ---
 title: "測試文章1"
-tags: ["Test", "Bug", "Angry"]
+tags: ["Test", "Flag", "Angry"]
 date: 2024-07-03
 ---
 
