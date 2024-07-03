@@ -47,10 +47,11 @@ b. 他必須在檔案第一行
 
 ## 目前認可的tags
 (若有不足，歡迎提出)(請不要包含中文)
-Blog
+
+Blog,
 Life, Study, Entertainment, Department, QA
 
-Mustread
+Mustread,
 Undergraduate(大學部), Graduate(研究所)
 
 Instruction(入學須知), Counseling(新生輔導), Learning(學習資訊), Dormitory(宿舍相關)
