@@ -2,7 +2,7 @@
 title: "新生營"
 tags: ["Mustread", "Undergraduate", "Counseling"]
 date: 2024-07-03
-index: 1
+index: 2
 ---
 
 **單位：** 學務處職涯發展中心  
