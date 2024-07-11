@@ -2,7 +2,7 @@
 title: "研究生宿舍重要日程"
 tags: ["Mustread", "Graduate", "Dormitory"]
 date: 2024-07-03
-index: 1
+index: 
 ---
 # 學生宿舍 
 
