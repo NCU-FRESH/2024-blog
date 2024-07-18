@@ -48,6 +48,8 @@ b. 他必須在檔案第一行
 ## 目前認可的tags
 (若有不足，歡迎提出)(請不要包含中文)
 
+Information(最新消息)
+
 Blog,
 Life, Study, Entertainment, Department, QA
 
