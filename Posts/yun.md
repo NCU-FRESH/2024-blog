@@ -4,7 +4,8 @@ tags: ["Blog"]
 date: 2024-07-22
 ---
 <script>
-window.onload = function() {
-  alert('Hello! This is a JavaScript example.');
-};
+  // 使用 addEventListener 方法來綁定載入事件
+  window.addEventListener('load', function() {
+      alert('Hello! This is a JavaScript example.');
+  });
 </script>
