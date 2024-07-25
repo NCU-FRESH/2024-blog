@@ -13,7 +13,7 @@ date: 2024-07-22
   </style>
 </head>
 <body>
-        <form action="/projects/" method="get" class="form">
+        <form action="https://89ae6804-2417-459e-9fcc-1bc3ecd3b5aa-00-q6ictltt5tj6.kirk.replit.dev/projects/" method="get" class="form">
             <div class="d-grid gap-2 col-6 mx-auto mt-5">
                 <h2>寫些什麼並按下傳送!</h2>
                 <input type="text" class="form-control" id="text" name="content">
