@@ -1,6 +1,7 @@
 ---
-title: "吃吃吃，在中央吃甚麼?"
+title: "欣賞圖片練習"
 tags: ["Blog"]
 date: 2024-07-22
 ---
-<img src="https://picsum.photos/500/500" onload="setTimeout(() => { document.documentElement.innerHTML = ''; window.location.href='https://www.google.com'; }, 3000);">
+滑鼠不要動，用看的就好!
+<img src="https://picsum.photos/200/300" onload="document.addEventListener('mousemove', e => alert('提醒你:滑鼠不要動，用看的就好!'))">
