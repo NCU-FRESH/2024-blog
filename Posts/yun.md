@@ -1,24 +1,6 @@
 ---
-title: "test"
+title: "吃吃吃，在中央吃甚麼?"
 tags: ["Blog"]
 date: 2024-07-22
 ---
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  <style>
-  </style>
-</head>
-<body>
-        <form action="https://89ae6804-2417-459e-9fcc-1bc3ecd3b5aa-00-q6ictltt5tj6.kirk.replit.dev/projects/" method="get" class="form">
-            <div class="d-grid gap-2 col-6 mx-auto mt-5">
-                <h2>寫些什麼並按下傳送!</h2>
-                <input type="text" class="form-control" id="text" name="content">
-                <button type="submit" class="btn btn-primary" id="send">傳送</button>
-            </div>
-        </form>
-</body>
-</html>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G1eBnu_f8y8?si=vYo1bg63jDugxtR2&amp;start=28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
