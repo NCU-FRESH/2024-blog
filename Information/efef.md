@@ -1,7 +1,7 @@
 ---
 type: "最新訊息1"
 date: 2024-08-12
-content: "time to eat lunch!"
+content: "2024年新生知訊網預計於8/15-8/20上線"
 publisher: "mom"
 ---
 
