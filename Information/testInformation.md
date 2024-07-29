@@ -1,6 +1,6 @@
 ---
 type: "重要公告"
 date: 2024-07-03
-content: "This is a test message!"
+content: "**新生知訊網下班倒數**：工人下班倒數四天 嗎??!?"
 publisher: "Alex"
 ---
