@@ -5,7 +5,7 @@ date: 2023/07/24
 ---
 # 七個和學習相關的YT頻道推薦(中文頻道篇)
 
-Cover: ![%E4%B8%83%E5%80%8B%E5%92%8C%E5%AD%B8%E7%BF%92%E7%9B%B8%E9%97%9C%E7%9A%84YT%E9%A0%BB%E9%81%93%E6%8E%A8%E8%96%A6(%E4%B8%AD%E6%96%87%E9%A0%BB%E9%81%93%E7%AF%87)%200f66ba9da23c4e988bd9ad3343e0d526/jeshoots-com_-_2vD8lIhdnw-unsplash.jpg](https://github.com/NCU-FRESH/2024-blog/blob/main/%E4%B8%83%E5%80%8B%E5%92%8C%E5%AD%B8%E7%BF%92%E7%9B%B8%E9%97%9C%E7%9A%84YT%E9%A0%BB%E9%81%93%E6%8E%A8%E8%96%A6(%E4%B8%AD%E6%96%87%E9%A0%BB%E9%81%93%E7%AF%87)/jeshoots-com_-_2vD8lIhdnw-unsplash.jpg?raw=true)
+![%E4%B8%83%E5%80%8B%E5%92%8C%E5%AD%B8%E7%BF%92%E7%9B%B8%E9%97%9C%E7%9A%84YT%E9%A0%BB%E9%81%93%E6%8E%A8%E8%96%A6(%E4%B8%AD%E6%96%87%E9%A0%BB%E9%81%93%E7%AF%87)%200f66ba9da23c4e988bd9ad3343e0d526/jeshoots-com_-_2vD8lIhdnw-unsplash.jpg](https://github.com/NCU-FRESH/2024-blog/blob/main/%E4%B8%83%E5%80%8B%E5%92%8C%E5%AD%B8%E7%BF%92%E7%9B%B8%E9%97%9C%E7%9A%84YT%E9%A0%BB%E9%81%93%E6%8E%A8%E8%96%A6(%E4%B8%AD%E6%96%87%E9%A0%BB%E9%81%93%E7%AF%87)/jeshoots-com_-_2vD8lIhdnw-unsplash.jpg?raw=true)
 Date: 2023/07/24
 
 ### 內容摘要
