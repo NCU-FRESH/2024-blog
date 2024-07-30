@@ -5,21 +5,18 @@ date: 2023/07/13
 ---
 # 六個和學習相關的YT頻道推薦(英文頻道篇)
 
-Author: 楨
 Cover: ![%E5%85%AD%E5%80%8B%E5%92%8C%E5%AD%B8%E7%BF%92%E7%9B%B8%E9%97%9C%E7%9A%84YT%E9%A0%BB%E9%81%93%E6%8E%A8%E8%96%A6(%E8%8B%B1%E6%96%87%E9%A0%BB%E9%81%93%E7%AF%87)%2005ffa4d6974b46a896024f07b33e46d2/christian-wiediger-NmGzVG5Wsg8-unsplash.jpg](https://github.com/NCU-FRESH/2024-blog/blob/main/%E5%85%AD%E5%80%8B%E5%92%8C%E5%AD%B8%E7%BF%92%E7%9B%B8%E9%97%9C%E7%9A%84YT%E9%A0%BB%E9%81%93%E6%8E%A8%E8%96%A6(%E8%8B%B1%E6%96%87%E9%A0%BB%E9%81%93%E7%AF%87)/christian-wiediger-NmGzVG5Wsg8-unsplash.jpg?raw=true)
-Date: July 13, 2023
-Subtitle: 不只有中文頻道，英文頻種類更多，資源更豐富!
-Topic: 生活
-tags: 分享, 學習
+Date: 2023/07/13
+
 
 ### **🎥摘要**
 
-1. [**MIT OpenCourseWare](https://www.youtube.com/@mitocw) (開放式課程)**
-2. [**blackpenredpen](https://www.youtube.com/@blackpenredpen) (數學)**
-3. [**Ali Abdaal](https://www.youtube.com/@aliabdaal)  (個人生活分享)**
-4. [**Gwen Tv](https://www.youtube.com/@GwenTv) (多益 Speaking/ Writing)**
-5. [**FlyWithJohnnyThai](https://www.youtube.com/@FlyWithJohnnyThai) (男生穿搭)**
-6. [**freecodecamp](https://www.youtube.com/@freecodecamp) (程式設計教學)**
+1. **[MIT OpenCourseWare](https://www.youtube.com/@mitocw) (開放式課程)**
+2. **[blackpenredpen](https://www.youtube.com/@blackpenredpen) (數學)**
+3. **[Ali Abdaal](https://www.youtube.com/@aliabdaal)  (個人生活分享)**
+4. **[Gwen Tv](https://www.youtube.com/@GwenTv) (多益 Speaking/ Writing)**
+5. **[FlyWithJohnnyThai](https://www.youtube.com/@FlyWithJohnnyThai) (男生穿搭)**
+6. **[freecodecamp](https://www.youtube.com/@freecodecamp) (程式設計教學)**
 
 一、[**MIT OpenCourseWare**](https://www.youtube.com/@mitocw)
 
@@ -39,13 +36,13 @@ tags: 分享, 學習
 
 來自理工學院同學的推薦。如果你覺得數學很無聊，只想逃避的話，你可以看看這個頻道，肯定會讓你改觀。頻道內容相當有趣，不像是在上死板的數學課，你會不知不覺地被吸引就看完了!!  
 
-三、[**Ali Abdaal](https://www.youtube.com/@aliabdaal)**  
+三、**[Ali Abdaal](https://www.youtube.com/@aliabdaal)**  
 
 ![螢幕擷取畫面 (134).png](https://github.com/NCU-FRESH/2024-blog/blob/main/%E5%85%AD%E5%80%8B%E5%92%8C%E5%AD%B8%E7%BF%92%E7%9B%B8%E9%97%9C%E7%9A%84YT%E9%A0%BB%E9%81%93%E6%8E%A8%E8%96%A6(%E8%8B%B1%E6%96%87%E9%A0%BB%E9%81%93%E7%AF%87)/%25E8%259E%25A2%25E5%25B9%2595%25E6%2593%25B7%25E5%258F%2596%25E7%2595%25AB%25E9%259D%25A2_(134).png?raw=true)
 
 來自劍橋大學醫學院的超級學霸，他是知識型youtuber，主要分享讓做事更高效率的技巧。除了有課業上學習的技巧，還有理財、事業拓展等等。和錦堂蠻像的，如果你在學習上遇到困難，想要突破現狀的話，可以來看看喔!
 
-四、[**Gwen Tv](https://www.youtube.com/@GwenTv)** 
+四、**[Gwen Tv](https://www.youtube.com/@GwenTv)** 
 
 ![螢幕擷取畫面 (135).png](https://github.com/NCU-FRESH/2024-blog/blob/main/%E5%85%AD%E5%80%8B%E5%92%8C%E5%AD%B8%E7%BF%92%E7%9B%B8%E9%97%9C%E7%9A%84YT%E9%A0%BB%E9%81%93%E6%8E%A8%E8%96%A6(%E8%8B%B1%E6%96%87%E9%A0%BB%E9%81%93%E7%AF%87)/%25E8%259E%25A2%25E5%25B9%2595%25E6%2593%25B7%25E5%258F%2596%25E7%2595%25AB%25E9%259D%25A2_(135).png?raw=true)
 
@@ -53,7 +50,7 @@ tags: 分享, 學習
 
 她常常會直播帶你完整的經過整個考試的流程，讓你熟悉題型以及回答方式。每次的直播也都會留下紀錄檔，沒跟上直播的話也可以日後再複習!
 
-五、[**FlyWithJohnnyThai](https://www.youtube.com/@FlyWithJohnnyThai)** 
+五、**[FlyWithJohnnyThai](https://www.youtube.com/@FlyWithJohnnyThai)** 
 
 ![螢幕擷取畫面 (136).png](https://github.com/NCU-FRESH/2024-blog/blob/main/%E5%85%AD%E5%80%8B%E5%92%8C%E5%AD%B8%E7%BF%92%E7%9B%B8%E9%97%9C%E7%9A%84YT%E9%A0%BB%E9%81%93%E6%8E%A8%E8%96%A6(%E8%8B%B1%E6%96%87%E9%A0%BB%E9%81%93%E7%AF%87)/%25E8%259E%25A2%25E5%25B9%2595%25E6%2593%25B7%25E5%258F%2596%25E7%2595%25AB%25E9%259D%25A2_(136).png?raw=true)
 
