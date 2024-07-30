@@ -9,34 +9,176 @@ date: 2024-07-22
 <div class="row">
 <h4 class="text-3xl font-bold mb-4">上課大樓名稱查詢</h4>
 </div>
-
 <div class="row align-items-start">
 <div class="col-8">
-<input class="form-control mb-4" type="text" style="border-color: rgb(180 83 9); border-width: 0.15rem;" id="buildingCode" placeholder="輸入大樓代碼">
+<input class="form-control mb-4" type="text" style="border-color: rgb(180 83 9); border-width: 0.15rem;" id="buildingCode" placeholder="輸入大樓代碼(例:I)">
 </div>
 <div class="col-4">
 <button class="btn text-white d-block col-12" style="background-color: #9e6b59;" onclick="
 var isAppleDevice = /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent || navigator.vendor || window.opera);
 var buildings = [
-{code: 'A', name: '文學一館', g_map: 'https://goo.gl/maps/dmBrr4xnK1JeytGB8', a_map: 'https://maps.apple.com/?address=320317台灣桃園市中壢區&auid=8164453128013662295&ll=24.969378,121.194551&lsp=9902&q=國立中央大學文學一館&t=r'},
-{code: 'C2', name: '文學二館', g_map: 'https://goo.gl/maps/LAnvszz6ZfMrTFEM6', a_map: 'https://maps.apple.com/?address=320台灣桃園市中壢區中大路300號&auid=9829456620230881551&ll=24.968771,121.194613&lsp=9902&q=文學二館&t=r'},
-{code: 'E', name: '工程一館', g_map: 'https://goo.gl/maps/u5o81ZpRuXcqcgWTA', a_map: 'https://maps.apple.com/?address=320317台灣桃園市中壢區中大路300號&auid=5523926844627740521&ll=24.967091,121.192698&lsp=9902&q=工程一館&t=r'},
-{code: 'E1', name: '工程二館(資電學院辦公室)', g_map: 'https://goo.gl/maps/AGSD5vLvzPScE44s9', a_map: 'https://maps.apple.com/?address=320台灣桃園市中壢區中大路300號&auid=6122627498224294796&ll=24.967375,121.191875&lsp=9902&q=工程二館&t=r'},
-{code: 'E2', name: '機械館(工程三館)', g_map: 'https://goo.gl/maps/nVEe2kNxa8waVxx49', a_map: 'https://maps.apple.com/?address=國立中央大學324台灣桃園市平鎮區雙連里&auid=7243484797072291443&ll=24.967978,121.188737&lsp=9902&q=機械館&t=r'},
-{code: 'E3', name: '環工化工館', g_map: 'https://goo.gl/maps/ChtrH8B9tM7phi6W9', a_map: 'https://maps.apple.com/?address=國立中央大學320台灣桃園市平鎮區雙連里&auid=14195489125104946467&ll=24.968329,121.187686&lsp=9902&q=環工化工館&t=r'},
-{code: 'E4', name: '機電實驗室', g_map: 'https://goo.gl/maps/8Dx9stdKYXNXmkDu8', a_map: ''},
-{code: 'E5', name: '大型力學實驗室', g_map: 'https://goo.gl/maps/6etywwTHiAtr1sEX6', a_map: 'https://maps.apple.com/?address=320317台灣桃園市中壢區中大路300號&auid=9415511250769958399&ll=24.968757,121.188555&lsp=9902&q=大型力學實驗室&t=r'},
-{code: 'E6', name: '工程五館大樓(工學院辦公室)', g_map: 'https://goo.gl/maps/8jDtoAht8tX9chLR7', a_map: 'https://maps.apple.com/?address=國立中央大學324台灣桃園市平鎮區雙連里&auid=12009543488106939736&ll=24.967138,121.187682&lsp=9902&q=國立中央大學工程五館&t=r'},
-{code: 'H2', name: '理學院教學館(原普化實驗大樓)', g_map: 'https://goo.gl/maps/vLByMzVArpChbsJY7', a_map: ''},
-{code: 'HK', name: '客家學院大樓(客家學院辦公室)', g_map: 'https://goo.gl/maps/utfxMNFvBgn3DXDb7', a_map: 'https://maps.apple.com/?address=320台灣桃園市中壢區中大路300號&auid=1387615647684134107&ll=24.970848,121.190336&lsp=9902&q=國立中央大學客家學院大樓&t=r'},
-{code: 'I', name: '志希館(管理學院辦公室)', g_map: 'https://goo.gl/maps/zr62NusULfHfjFXG8', a_map: 'https://maps.apple.com/?address=國立中央大學320台灣桃園市中壢區五權里&auid=18339168732871101213&ll=24.970216,121.193812&lsp=9902&q=志希館&t=r'},
-{code: 'I1', name: '管理二館', g_map: 'https://goo.gl/maps/EBum6jS2MmY6KFZ57', a_map: 'https://maps.apple.com/?address=國立中央大學320台灣桃園市中壢區五權里&auid=11339571079636042899&ll=24.970690,121.193502&lsp=9902&q=管理二館&t=r'},
-{code: 'IL', name: '國鼎光電大樓', g_map: 'https://goo.gl/maps/2KM5SHr7AMwScByKA', a_map: 'https://maps.apple.com/?address=國立中央大學320台灣桃園市平鎮區雙連里&auid=14616547687819694150&ll=24.970322,121.190389&lsp=9902&q=國鼎光電大樓&t=r'},
-{code: 'L3', name: '國鼎圖書資料館', g_map: 'https://goo.gl/maps/PagQexZyk9eixE567', a_map: ''},
-{code: 'LS', name: '人文社會科學大樓(文學院辦公室)', g_map: 'https://goo.gl/maps/Qmw1d2TtE6G1HDLq5', a_map: 'https://maps.apple.com/?address=320台灣桃園市中壢區中大路300號&auid=10666553622271177631&ll=24.969330,121.195185&lsp=9902&q=人文社會科學大樓&t=r'},
-{code: 'M', name: '鴻經館', g_map: 'https://goo.gl/maps/5pg7urBkkxFekNvp6', a_map: 'https://maps.apple.com/?address=320011台灣桃園市中壢區&auid=11521147528526283842&ll=24.970795,121.192651&lsp=9902&q=中央大學鴻經館&t=r'},
-{code: 'O', name: '綜教館(語言中心)', g_map: 'https://goo.gl/maps/NgBDQ13zUMdHGpLn7', a_map: 'https://maps.apple.com/?address=320台灣桃園市中壢區中大路300號&auid=17318161590537731525&ll=24.970628,121.195376&lsp=9902&q=國立中央大學綜合教學館&t=r'},
-{code: 'T', name: '科學二館', g_map: 'https://goo.gl/maps/ExWuCGMWbTBrzF3m8', a_map: 'https://maps.apple.com/?address=320台灣桃園市中壢區中大路300號&auid=14361994485291521330&ll=24.968229,121.193134&lsp=9902&q=國立中央大學科學二館&t=r'}
+{
+'code': 'A',
+'name': '文學一館',
+'g_map': 'https://goo.gl/maps/dmBrr4xnK1JeytGB8',
+'a_map': 'https://maps.apple.com/?address=320317%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80&auid=8164453128013662295&ll=24.969378,121.194551&lsp=9902&q=%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8%E6%96%87%E5%AD%B8%E4%B8%80%E9%A4%A8&t=r'
+},
+{
+'code': 'C2',
+'name': '文學二館',
+'g_map': 'https://goo.gl/maps/LAnvszz6ZfMrTFEM6',
+'a_map': 'https://maps.apple.com/?address=320%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E4%B8%AD%E5%A4%A7%E8%B7%AF300%E8%99%9F&auid=9829456620230881551&ll=24.968771,121.194613&lsp=9902&q=%E6%96%87%E5%AD%B8%E4%BA%8C%E9%A4%A8&t=r'
+},
+{
+'code': 'E',
+'name': '工程一館',
+'g_map': 'https://goo.gl/maps/u5o81ZpRuXcqcgWTA',
+'a_map': 'https://maps.apple.com/?address=320317%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E4%B8%AD%E5%A4%A7%E8%B7%AF300%E8%99%9F&auid=5523926844627740521&ll=24.967091,121.192698&lsp=9902&q=%E5%B7%A5%E7%A8%8B%E4%B8%80%E9%A4%A8&t=r'
+},
+{
+'code': 'E1',
+'name': '工程二館(資電學院辦公室)',
+'g_map': 'https://goo.gl/maps/AGSD5vLvzPScE44s9',
+'a_map': 'https://maps.apple.com/?address=320%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E4%B8%AD%E5%A4%A7%E8%B7%AF300%E8%99%9F&auid=6122627498224294796&ll=24.967375,121.191875&lsp=9902&q=%E5%B7%A5%E7%A8%8B%E4%BA%8C%E9%A4%A8&t=r'
+},
+{
+'code': 'E2',
+'name': '機械館(工程三館)',
+'g_map': 'https://goo.gl/maps/nVEe2kNxa8waVxx49',
+'a_map': 'https://maps.apple.com/?address=%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8%20324%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E5%B9%B3%E9%8E%AE%E5%8D%80%E9%9B%99%E9%80%A3%E9%87%8C&auid=7243484797072291443&ll=24.967978,121.188737&lsp=9902&q=%E6%A9%9F%E6%A2%B0%E9%A4%A8&t=r'
+},
+{
+'code': 'E3',
+'name': '環工化工館',
+'g_map': 'https://goo.gl/maps/ChtrH8B9tM7phi6W9',
+'a_map': 'https://maps.apple.com/?address=%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8%20320%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E5%B9%B3%E9%8E%AE%E5%8D%80%E9%9B%99%E9%80%A3%E9%87%8C&auid=14195489125104946467&ll=24.968329,121.187686&lsp=9902&q=%E7%92%B0%E5%B7%A5%E5%8C%96%E5%B7%A5%E9%A4%A8&t=r'
+},
+{
+'code': 'E4',
+'name': '機電實驗室',
+'g_map': 'https://goo.gl/maps/8Dx9stdKYXNXmkDu8',
+'a_map': 'https://goo.gl/maps/8Dx9stdKYXNXmkDu8'
+},
+{
+'code': 'E5',
+'name': '大型力學實驗室',
+'g_map': 'https://goo.gl/maps/6etywwTHiAtr1sEX6',
+'a_map': 'https://maps.apple.com/?address=320317%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E4%B8%AD%E5%A4%A7%E8%B7%AF300%E8%99%9F&auid=9415511250769958399&ll=24.968757,121.188555&lsp=9902&q=%E5%A4%A7%E5%9E%8B%E5%8A%9B%E5%AD%B8%E5%AF%A6%E9%A9%97%E9%A4%A8&t=r'
+},
+{
+'code': 'E6',
+'name': '工程五館大樓(工學院辦公室)',
+'g_map': 'https://goo.gl/maps/8jDtoAht8tX9chLR7',
+'a_map': 'https://maps.apple.com/?address=%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8%20324%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E5%B9%B3%E9%8E%AE%E5%8D%80%E9%9B%99%E9%80%A3%E9%87%8C&auid=12009543488106939736&ll=24.967138,121.187682&lsp=9902&q=%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8%E5%B7%A5%E7%A8%8B%E4%BA%94%E9%A4%A8&t=r'
+},
+{
+'code': 'H2',
+'name': '理學院教學館(原普化實驗大樓)',
+'g_map': 'https://goo.gl/maps/vLByMzVArpChbsJY7',
+'a_map': ''
+},
+{
+'code': 'HK',
+'name': '客家學院大樓(客家學院辦公室)',
+'g_map': 'https://goo.gl/maps/utfxMNFvBgn3DXDb7',
+'a_map': 'https://maps.apple.com/?address=320%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E4%B8%AD%E5%A4%A7%E8%B7%AF300%E8%99%9F&auid=1387615647684134107&ll=24.970848,121.190336&lsp=9902&q=%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8%E5%AE%A2%E5%AE%B6%E5%AD%B8%E9%99%A2%E5%A4%A7%E6%A8%93&t=r'
+},
+{
+'code': 'I',
+'name': '志希館(管理學院辦公室)',
+'g_map': 'https://goo.gl/maps/zr62NusULfHfjFXG8',
+'a_map': 'https://maps.apple.com/?address=%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8%20320%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E4%BA%94%E6%AC%8A%E9%87%8C&auid=18339168732871101213&ll=24.970216,121.193812&lsp=9902&q=%E5%BF%97%E5%B8%8C%E9%A4%A8&t=r'
+},
+{
+'code': 'I1',
+'name': '管理二館',
+'g_map': 'https://goo.gl/maps/EBum6jS2MmY6KFZ57',
+'a_map': 'https://maps.apple.com/?address=%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8%20320%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E4%BA%94%E6%AC%8A%E9%87%8C&auid=11339571079636042899&ll=24.970690,121.193502&lsp=9902&q=%E7%AE%A1%E7%90%86%E4%BA%8C%E9%A4%A8&t=r'
+},
+{
+'code': 'IL',
+'name': '國鼎光電大樓',
+'g_map': 'https://goo.gl/maps/2KM5SHr7AMwScByKA',
+'a_map': 'https://maps.apple.com/?address=%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8%20320%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E5%B9%B3%E9%8E%AE%E5%8D%80%E9%9B%99%E9%80%A3%E9%87%8C&auid=14616547687819694150&ll=24.970322,121.190389&lsp=9902&q=%E5%9C%8B%E9%BC%8E%E5%85%89%E9%9B%BB%E5%A4%A7%E6%A8%93&t=r'
+},
+{
+'code': 'L3',
+'name': '國鼎圖書資料館',
+'g_map': 'https://goo.gl/maps/PagQexZyk9eixE567',
+'a_map': 'https://goo.gl/maps/PagQexZyk9eixE567'
+},
+{
+'code': 'LS',
+'name': '人文社會科學大樓(文學院辦公室)',
+'g_map': 'https://goo.gl/maps/Qmw1d2TtE6G1HDLq5',
+'a_map': 'https://maps.apple.com/?address=320%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E4%B8%AD%E5%A4%A7%E8%B7%AF300%E8%99%9F&auid=10666553622271177631&ll=24.969330,121.195185&lsp=9902&q=%E4%BA%BA%E6%96%87%E7%A4%BE%E6%9C%83%E7%A7%91%E5%AD%B8%E5%A4%A7%E6%A8%93&t=r'
+},
+{
+'code': 'M',
+'name': '鴻經館',
+'g_map': 'https://goo.gl/maps/5pg7urBkkxFekNvp6',
+'a_map': 'https://maps.apple.com/?address=320011%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80&auid=11521147528526283842&ll=24.970795,121.192651&lsp=9902&q=%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8%E9%B4%BB%E7%B6%93%E9%A4%A8&t=r'
+},
+{
+'code': 'O',
+'name': '綜教館(語言中心)',
+'g_map': 'https://goo.gl/maps/Ng1hennaUCiGdATq6',
+'a_map': 'https://maps.apple.com/?address=%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8%20320%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E4%BA%94%E6%AC%8A%E9%87%8C&auid=9167532294098721387&ll=24.970189,121.192866&lsp=9902&q=%E7%B6%9C%E6%95%99%E9%A4%A8&t=r'
+},
+{
+'code': 'R2',
+'name': '太空及遙測研究中心',
+'g_map': 'https://goo.gl/maps/mm15eTgFw8S4aXHB8',
+'a_map': 'https://maps.apple.com/?address=%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8%20320%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E5%B9%B3%E9%8E%AE%E5%8D%80%E9%9B%99%E9%80%A3%E9%87%8C&auid=8104162060483972960&ll=24.967813,121.187031&lsp=9902&q=%E5%A4%AA%E7%A9%BA%E5%8F%8A%E9%81%99%E6%B8%AC%E7%A0%94%E7%A9%B6%E4%B8%AD%E5%BF%83&t=r'
+},
+{
+'code': 'R3',
+'name': '研究中心大樓二期(生醫理工學院辦公室)',
+'g_map': 'https://goo.gl/maps/ohjCWqRE1GomWqma8',
+'a_map': 'https://maps.apple.com/?address=%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8%2032001%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E4%B8%AD%E5%A4%A7%E8%B7%AF300%E8%99%9F&auid=8798918462858456225&ll=24.967794,121.187611&lsp=9902&q=%E7%94%9F%E9%86%AB%E7%90%86%E5%B7%A5%E5%AD%B8%E9%99%A2&t=r'
+},
+{
+'code': 'S',
+'name': '科學一館(地科院辦公室)',
+'g_map': 'https://goo.gl/maps/BpqNodS4QFwHgPTa7',
+'a_map': 'https://maps.apple.com/?address=320%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E4%B8%AD%E5%A4%A7%E8%B7%AF300%E8%99%9F&auid=9005657101883279795&ll=24.967296,121.194575&lsp=9902&q=%E7%A7%91%E5%AD%B8%E4%B8%80%E9%A4%A8&t=r'
+},
+{
+'code': 'S1',
+'name': '科學二館(理學院辦公室)',
+'g_map': 'https://goo.gl/maps/ufeZu4MCMxUkeCmv8',
+'a_map': 'https://maps.apple.com/?address=320%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E4%B8%AD%E5%A4%A7%E8%B7%AF300%E8%99%9F&auid=16611929682023462403&ll=24.969982,121.192245&lsp=9902&q=%E7%A7%91%E5%AD%B8%E4%BA%8C%E9%A4%A8&t=r'
+},
+{
+'code': 'S2',
+'name': '科學三館',
+'g_map': 'https://goo.gl/maps/UQrJgUM6skyriB459',
+'a_map': 'https://maps.apple.com/?address=%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8%20320%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E4%BA%94%E6%AC%8A%E9%87%8C&auid=1609623648081047060&ll=24.970634,121.192138&lsp=9902&q=%E7%A7%91%E5%AD%B8%E4%B8%89%E9%A4%A8&t=r'
+},
+{
+'code': 'S4',
+'name': '健雄館(科學四館)',
+'g_map': 'https://goo.gl/maps/Ja8erC8nGnnNfi7L9',
+'a_map': 'https://maps.apple.com/?address=320317%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E4%B8%AD%E5%A4%A7%E8%B7%AF300%E8%99%9F&auid=9281096885998354525&ll=24.971344,121.192278&lsp=9902&q=%E5%81%A5%E9%9B%84%E9%A4%A8(%E7%A7%91%E5%AD%B8%E5%9B%9B%E9%A4%A8)&t=r'
+},
+{
+'code': 'S5',
+'name': '科學五館',
+'g_map': 'https://goo.gl/maps/L2qsydbpTmEHbSvq6',
+'a_map': 'https://maps.apple.com/?address=%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8%20320%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E5%A4%A7%E4%BA%AB%E8%A1%97215%E5%B7%B789%E4%B9%8B1%E8%99%9F&auid=2571812885307065444&ll=24.971441,121.192761&lsp=9902&q=%E7%A7%91%E5%AD%B8%E4%BA%94%E9%A4%A8&t=r'
+},
+{
+'code': 'TR',
+'name': '教學研究綜合大樓暨大禮堂(教研大樓)',
+'g_map': 'https://maps.app.goo.gl/BTwJ1dSBFkPSNXxPA',
+'a_map': 'https://maps.apple.com/?address=320%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E4%B8%AD%E5%A4%A7%E8%B7%AF300%E8%99%9F&auid=17956247415407601863&ll=24.968325,121.191653&lsp=9902&q=%E6%95%99%E5%AD%B8%E7%A0%94%E7%A9%B6%E7%B6%9C%E5%90%88%E5%A4%A7%E6%A8%93&t=r'
+},
+{
+'code': 'YH',
+'name': '依仁堂(體育館)',
+'g_map': 'https://goo.gl/maps/kv4PmB1cXponk3Kg6',
+'a_map': 'https://maps.apple.com/?address=320%E5%8F%B0%E7%81%A3%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E4%B8%AD%E5%A4%A7%E8%B7%AF300%E8%99%9F&auid=12457609714473268037&ll=24.968302,121.190895&lsp=9902&q=%E4%BE%9D%E4%BB%81%E5%A0%82&t=r'
+}
 ];
 var code = document.getElementById('buildingCode').value.trim().toUpperCase();
 var result = buildings.find(building => building.code === code);
