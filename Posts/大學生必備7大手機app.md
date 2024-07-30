@@ -41,8 +41,10 @@ Date:2022/07/25
 
 <aside>
 ⚠️ 鵝編小提醒
+
 1. [領獎教學](https://www.cinvoice.tw/faq/article?id=132&title=%E9%9B%B2%E7%AB%AF%E7%99%BC%E7%A5%A8%E5%A6%82%E4%BD%95%E9%A0%98%E7%8D%8E%EF%BC%9F)
-[2. 手機條碼申請](https://www.einvoice.nat.gov.tw/APCONSUMER/BTC501W/)
+
+2. [手機條碼申請](https://www.einvoice.nat.gov.tw/APCONSUMER/BTC501W/)
 3. IPhone 用戶可以設定載具至桌面小工具，就可以直接秀出桌面給店員刷嚕！
 
 </aside>
@@ -123,10 +125,13 @@ TimeTree 鵝編覺得最特別的地方在於可以**與其他人共用行事�
 
 <aside>
 ⚠️ 鵝編小提醒：
+
 1. [notion教學-從入門到上手操作技巧](https://medium.com/jp%E7%B0%A1%E5%A0%B1%E5%9D%8A/notion%E6%95%99%E5%AD%B8-%E5%BE%9E%E5%85%A5%E9%96%80%E5%88%B0%E4%B8%8A%E6%89%8B%E6%93%8D%E4%BD%9C%E6%8A%80%E5%B7%A7-baa08ebf9069)
-2.[(免費模板) 用Notion規劃2022生活！我的年度目標、週計畫、帳務管理、影劇/旅行清單全公開＋基本功能教學📍2022 Notion Setup + Free Template｜星星雜貨店](https://www.youtube.com/watch?v=2I7Od7x3G4Y)
+
+2. [(免費模板) 用Notion規劃2022生活！我的年度目標、週計畫、帳務管理、影劇/旅行清單全公開＋基本功能教學📍2022 Notion Setup + Free Template｜星星雜貨店](https://www.youtube.com/watch?v=2I7Od7x3G4Y)
 
 </aside>
+
 
 ### 繼續看下一篇吧！
 
