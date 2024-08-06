@@ -1,6 +1,6 @@
 ---
 title: "科系對對碰：化學系 vs 化材系"
-tags: ["Blog", "department"]
+tags: ["Blog", "Department"]
 date: 2022-07-26
 ---
 # 科系對對碰：化學系 vs. 化材系
