@@ -1,6 +1,6 @@
 ---
 title: "科系對對碰：客家語文暨社會科學學系 vs 文學院學士班"
-tags: ["Blog", "department"]
+tags: ["Blog", "Department"]
 date: 2022-07-26
 ---
 # 科系對對碰：客家語文暨社會科學學系 vs. 文學院學士班
