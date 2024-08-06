@@ -1,6 +1,6 @@
 ---
 title: "科系對對碰：企管系 vs 經濟系 vs 財金系"
-tags: ["Blog", "department"]
+tags: ["Blog", "Department"]
 date: 2022-07-26
 ---
 # 科系對對碰：企管系 vs. 經濟系 vs. 財金系
