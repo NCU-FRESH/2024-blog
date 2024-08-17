@@ -1,6 +1,6 @@
 ---
 title: "科系對對碰：通訊系 vs. 電機系 vs. 資電學士班"
-tags: ["Blog", “Department"]
+tags: ["Blog", "Department"]
 date: 2022-07-26
 ---
 # 科系對對碰：通訊系 vs. 電機系 vs. 資電學士班
