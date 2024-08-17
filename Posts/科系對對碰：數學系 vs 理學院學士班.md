@@ -1,6 +1,6 @@
 ---
 title: "科系對對碰：數學系 vs. 理學院學士班"
-tags: ["Blog", “Department"]
+tags: ["Blog", "Department"]
 date: 2022-07-26
 ---
 # 科系對對碰：數學系 vs. 理學院學士班
