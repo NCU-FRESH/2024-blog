@@ -6,7 +6,7 @@ date: 2023/07/13
 # 六個和學習相關的YT頻道推薦(英文頻道篇)
 
 Cover: ![%E5%85%AD%E5%80%8B%E5%92%8C%E5%AD%B8%E7%BF%92%E7%9B%B8%E9%97%9C%E7%9A%84YT%E9%A0%BB%E9%81%93%E6%8E%A8%E8%96%A6(%E8%8B%B1%E6%96%87%E9%A0%BB%E9%81%93%E7%AF%87)%2005ffa4d6974b46a896024f07b33e46d2/christian-wiediger-NmGzVG5Wsg8-unsplash.jpg](https://github.com/NCU-FRESH/2024-blog/blob/main/%E5%85%AD%E5%80%8B%E5%92%8C%E5%AD%B8%E7%BF%92%E7%9B%B8%E9%97%9C%E7%9A%84YT%E9%A0%BB%E9%81%93%E6%8E%A8%E8%96%A6(%E8%8B%B1%E6%96%87%E9%A0%BB%E9%81%93%E7%AF%87)/christian-wiediger-NmGzVG5Wsg8-unsplash.jpg?raw=true)
-Date: 2023/07/13
+
 
 
 ### **🎥摘要**
