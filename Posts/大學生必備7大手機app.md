@@ -8,9 +8,9 @@ date: 2022/07/25
 > 鵝編不私藏～！實用APP TOP7大公開！
 > 
 
-Date:2022/07/25
 
 #科技#必備#日常#分享#技巧
+<br>
 
 <aside>
 🐧 本文將會將app區分為三類來做介紹
@@ -133,6 +133,4 @@ TimeTree 鵝編覺得最特別的地方在於可以**與其他人共用行事�
 </aside>
 
 
-### 繼續看下一篇吧！
 
-[](https://ncufresh.ncu.edu.tw/blog/life/?postId=7bb385e3-ccc2-4250-863e-74a8e47ac587)
